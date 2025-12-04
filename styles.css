@@ -1,0 +1,36 @@
+IMG {
+    height: 200px;
+    width: 200px;
+}
+
+em{
+    color: white
+}
+
+.chart-container{
+    background-color: white;
+}
+
+.dark-mode{
+    .bg-light{
+        --bs-bg-opacity: 0;
+    }
+    .form-control{
+        background-color: #1F1B24;
+        color: white;
+    }
+    .chart-container{
+        background-color: #121212;
+    }
+    background-color: #121212;
+    color: white;
+}
+
+#table > tr > td{
+    padding: 0 10px 0 0;
+    margin: auto
+}
+
+#table > tr > td > img{
+    margin-left: 100px;
+}
