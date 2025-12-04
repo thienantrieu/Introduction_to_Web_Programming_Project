@@ -29,13 +29,13 @@ const convertKelvinButton = document.getElementById('toKelvin');
 const QR_button = document.getElementById('QR_button');
 
 //URLs
-let dataURL_current = 'https://weather.googleapis.com/v1/currentConditions:lookup?key=AIzaSyDdJIzcNgYuZhhSsiXR_s9Gp_jbWyZF5qc&location.latitude={lat}&location.longitude={lon}'
+let dataURL_current = 'https://weather.googleapis.com/v1/currentConditions:lookup?key=[INSERT_OWN_API_KEY]&location.latitude={lat}&location.longitude={lon}'
 let dataURL_7days = 'https://api.met.no/weatherapi/subseasonal/1.0/complete?lat={lat}&lon={lon}'
 let dataURL_24hours = 'https://api.open-meteo.com/v1/forecast?latitude={lat}&longitude={lon}&hourly=temperature_2m'
-let geodataURL = 'https://maps.googleapis.com/maps/api/geocode/json?address={address}&key=AIzaSyDdJIzcNgYuZhhSsiXR_s9Gp_jbWyZF5qc'
-let r_geodataURL = 'https://maps.googleapis.com/maps/api/geocode/json?latlng={lat},{lon}&key=AIzaSyDdJIzcNgYuZhhSsiXR_s9Gp_jbWyZF5qc'
+let geodataURL = 'https://maps.googleapis.com/maps/api/geocode/json?address={address}&key=[INSERT_OWN_API_KEY]'
+let r_geodataURL = 'https://maps.googleapis.com/maps/api/geocode/json?latlng={lat},{lon}&key=[INSERT_OWN_API_KEY]'
 let sundataURL = 'https://api.sunrise-sunset.org/json?lat={lat}&lng={lon}&tzid=Europe/Helsinki'
-let dataURL_24hours_google = 'https://weather.googleapis.com/v1/forecast/hours:lookup?key=AIzaSyDdJIzcNgYuZhhSsiXR_s9Gp_jbWyZF5qc&location.latitude={lat}&location.longitude={lon}'
+let dataURL_24hours_google = 'https://weather.googleapis.com/v1/forecast/hours:lookup?key=[INSERT_OWN_API_KEY]&location.latitude={lat}&location.longitude={lon}'
 
 //Current time
 let currentTime = new Date();
@@ -497,5 +497,6 @@ function handleForm(event) {
 }
 
 form.addEventListener('submit', handleForm)
+
 
 changeBackground_dark();
