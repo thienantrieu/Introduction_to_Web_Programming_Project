@@ -14,13 +14,13 @@ A browser-based weather application built as coursework for *Introduction to Web
 </p>
 
 ## Features
-
+ 
 - **Location search** — by latitude/longitude or by address (reverse/forward geocoding).
 - **Current conditions** — temperature, description, wind speed, UV index, daily high/low.
 - **Forecast charts** — 24-hour temperature (Open-Meteo vs. Google Weather) and 7-day min/mean/max temperature, rendered with [Frappe Charts](https://frappe.io/charts) and exportable as SVG.
 - **Unit conversion** — toggle between Celsius, Fahrenheit, and Kelvin.
 - **Favourites table** — save, and remove locations you've searched for.
-- **Day/night styling** — background adapts based on local sunrise/sunset time.
+- **Day/night styling** — background switches to a dark theme based on local sunrise/sunset time; during the day, the background color instead reflects the current temperature (e.g. blue for cold, red for hot — see [documentation](docs/documentation.pdf) for the full color scale).
 - **QR code page** — generates a QR code linking to the searched location on [Zoom Earth](https://zoom.earth), with a rain/snow-style animated background based on current precipitation.
 
 ## Tech stack
